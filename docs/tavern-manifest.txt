@@ -1,0 +1,295 @@
+Tavern 功能目录清单
+Generated: 2026-02-03 16:35:04+08:00
+Branch: dev
+
+说明：此清单基于 git ls-files（已纳入版本控制的文件），并按目录/特性做了 best-effort 归类。
+
+# UI - Tavern pages/components
+
+Count: 59
+- src/app/core/tavern/components/attachments-panel.tsx
+- src/app/core/tavern/components/authors-note-panel.tsx
+- src/app/core/tavern/components/auto-continue-settings.tsx
+- src/app/core/tavern/components/backgrounds-panel.tsx
+- src/app/core/tavern/components/bookmarks-panel.tsx
+- src/app/core/tavern/components/branch-indicator.tsx
+- src/app/core/tavern/components/cfg-scale-panel.tsx
+- src/app/core/tavern/components/character-info.tsx
+- src/app/core/tavern/components/character-list.tsx
+- src/app/core/tavern/components/chat-backups-panel.tsx
+- src/app/core/tavern/components/chat-window.tsx
+- src/app/core/tavern/components/connection-profiles.tsx
+- src/app/core/tavern/components/data-maid-panel.tsx
+- src/app/core/tavern/components/expressions-panel.tsx
+- src/app/core/tavern/components/gallery-panel.tsx
+- src/app/core/tavern/components/image-caption-panel.tsx
+- src/app/core/tavern/components/logit-bias-panel.tsx
+- src/app/core/tavern/components/macros-variables-panel.tsx
+- src/app/core/tavern/components/memory-panel.tsx
+- src/app/core/tavern/components/message-branch-button.tsx
+- src/app/core/tavern/components/persona-indicator.tsx
+- src/app/core/tavern/components/persona-selector-dialog.tsx
+- src/app/core/tavern/components/prompt-manager-panel.tsx
+- src/app/core/tavern/components/qr-script-editor.tsx
+- src/app/core/tavern/components/quick-reply-bar.tsx
+- src/app/core/tavern/components/reasoning-block.tsx
+- src/app/core/tavern/components/reasoning-settings-panel.tsx
+- src/app/core/tavern/components/settings-drawer.tsx
+- src/app/core/tavern/components/sprite-viewer.tsx
+- src/app/core/tavern/components/stats-panel.tsx
+- src/app/core/tavern/components/swipe-controls.tsx
+- src/app/core/tavern/components/tag-manager.tsx
+- src/app/core/tavern/components/token-counter.tsx
+- src/app/core/tavern/components/tool-calling-panel.tsx
+- src/app/core/tavern/components/translate-panel.tsx
+- src/app/core/tavern/components/triggers-panel.tsx
+- src/app/core/tavern/components/tts-panel.tsx
+- src/app/core/tavern/components/vectors-panel.tsx
+- src/app/core/tavern/components/voice-config.tsx
+- src/app/core/tavern/editor/page.tsx
+- src/app/core/tavern/groups/chat/page.tsx
+- src/app/core/tavern/groups/edit/page.tsx
+- src/app/core/tavern/groups/page.tsx
+- src/app/core/tavern/page.tsx
+- src/app/core/tavern/personas/page.tsx
+- src/app/core/tavern/presets/components/preset-editor.tsx
+- src/app/core/tavern/presets/components/preset-preview-dialog.tsx
+- src/app/core/tavern/presets/components/prompt-editor-dialog.tsx
+- src/app/core/tavern/presets/components/prompt-manager.tsx
+- src/app/core/tavern/presets/components/regex-script-editor.tsx
+- src/app/core/tavern/presets/components/sampling-params.tsx
+- src/app/core/tavern/presets/page.tsx
+- src/app/core/tavern/prompts/page.tsx
+- src/app/core/tavern/regex/page.tsx
+- src/app/core/tavern/sysprompt/page.tsx
+- src/app/core/tavern/world-info/bulk-operations.tsx
+- src/app/core/tavern/world-info/entry-editor.tsx
+- src/app/core/tavern/world-info/page.tsx
+- src/app/core/tavern/world-info/settings-panel.tsx
+
+# UI - Extensions
+
+Count: 2
+- src/app/core/extensions/page.tsx
+- src/app/core/extensions/tavern-helper-card.tsx
+
+# Stores - tavern-* Zustand stores
+
+Count: 29
+- src/stores/extensions.ts
+- src/stores/tavern-attachments.ts
+- src/stores/tavern-authors-note.ts
+- src/stores/tavern-auto-continue.ts
+- src/stores/tavern-backgrounds.ts
+- src/stores/tavern-cfg-scale.ts
+- src/stores/tavern-chat-backup.ts
+- src/stores/tavern-connection-profiles.ts
+- src/stores/tavern-data-maid.ts
+- src/stores/tavern-expressions.ts
+- src/stores/tavern-gallery.ts
+- src/stores/tavern-image-caption.ts
+- src/stores/tavern-logit-bias.ts
+- src/stores/tavern-macros.ts
+- src/stores/tavern-memory.ts
+- src/stores/tavern-persona-settings.ts
+- src/stores/tavern-prompt-manager.ts
+- src/stores/tavern-quick-reply.ts
+- src/stores/tavern-reasoning.ts
+- src/stores/tavern-slash-commands.ts
+- src/stores/tavern-stats.ts
+- src/stores/tavern-sysprompt.ts
+- src/stores/tavern-tags.ts
+- src/stores/tavern-tool-calling.ts
+- src/stores/tavern-translate.ts
+- src/stores/tavern-tts.ts
+- src/stores/tavern-variables.ts
+- src/stores/tavern-vectors.ts
+- src/stores/tavern-world-info.ts
+
+# Lib - tavern core
+
+Count: 49
+- src/lib/tavern/__tests__/tavern.test.ts
+- src/lib/tavern/ai-service.ts
+- src/lib/tavern/attachments-service.ts
+- src/lib/tavern/bookmark-service.ts
+- src/lib/tavern/cache-manager.ts
+- src/lib/tavern/character-import.ts
+- src/lib/tavern/chat-completion.ts
+- src/lib/tavern/chat-io.ts
+- src/lib/tavern/chat-vectors.ts
+- src/lib/tavern/context-builder-v2.ts
+- src/lib/tavern/context-integration.ts
+- src/lib/tavern/debug-logger.ts
+- src/lib/tavern/expressions-service.ts
+- src/lib/tavern/group-chat-v2.ts
+- src/lib/tavern/group-context-builder.ts
+- src/lib/tavern/image-caption-service.ts
+- src/lib/tavern/index.ts
+- src/lib/tavern/INTEGRATION_GUIDE.md
+- src/lib/tavern/memory-service.ts
+- src/lib/tavern/persona-injection.ts
+- src/lib/tavern/persona-lock.ts
+- src/lib/tavern/persona-types.ts
+- src/lib/tavern/persona.ts
+- src/lib/tavern/preset-converter.ts
+- src/lib/tavern/preset-manager.ts
+- src/lib/tavern/preset-types.ts
+- src/lib/tavern/prompt-manager.ts
+- src/lib/tavern/regex-processor.ts
+- src/lib/tavern/slash-commands-service.ts
+- src/lib/tavern/sprite-animator.ts
+- src/lib/tavern/streaming.ts
+- src/lib/tavern/stscript/commands.ts
+- src/lib/tavern/stscript/executor.ts
+- src/lib/tavern/stscript/index.ts
+- src/lib/tavern/stscript/parser.ts
+- src/lib/tavern/stscript/types.ts
+- src/lib/tavern/stscript/variables.ts
+- src/lib/tavern/template-engine.ts
+- src/lib/tavern/tool-calling-service.ts
+- src/lib/tavern/translate-service.ts
+- src/lib/tavern/triggers/index.ts
+- src/lib/tavern/triggers/manager.ts
+- src/lib/tavern/triggers/types.ts
+- src/lib/tavern/tts-service.ts
+- src/lib/tavern/vectors-service.ts
+- src/lib/tavern/wi-references.ts
+- src/lib/tavern/wi-vectors.ts
+- src/lib/tavern/world-info-io.ts
+- src/lib/tavern/world-info-scanner.ts
+
+# Lib - tavern-helper (compat/core)
+
+Count: 23
+- src/lib/tavern-helper/compat/adapter.ts
+- src/lib/tavern-helper/compat/index.ts
+- src/lib/tavern-helper/COMPATIBILITY.md
+- src/lib/tavern-helper/core/error-handler.ts
+- src/lib/tavern-helper/core/event-bus.ts
+- src/lib/tavern-helper/core/index.ts
+- src/lib/tavern-helper/core/logger.ts
+- src/lib/tavern-helper/core/types.ts
+- src/lib/tavern-helper/generate/generator.ts
+- src/lib/tavern-helper/generate/index.ts
+- src/lib/tavern-helper/generate/manager.ts
+- src/lib/tavern-helper/index.ts
+- src/lib/tavern-helper/inject/index.ts
+- src/lib/tavern-helper/inject/manager.ts
+- src/lib/tavern-helper/macros/index.ts
+- src/lib/tavern-helper/macros/manager.ts
+- src/lib/tavern-helper/macros/processor.ts
+- src/lib/tavern-helper/messages/index.ts
+- src/lib/tavern-helper/messages/manager.ts
+- src/lib/tavern-helper/messages/store.ts
+- src/lib/tavern-helper/variables/index.ts
+- src/lib/tavern-helper/variables/manager.ts
+- src/lib/tavern-helper/variables/store.ts
+
+# DB
+
+Count: 2
+- src/db/index.ts
+- src/db/tavern.ts
+
+# Tauri backend
+
+Count: 1
+- src-tauri/src/tavern.rs
+
+# Scripts
+
+Count: 1
+- start-tavern.bat
+
+# Feature - World Info (世界书)
+
+Count: 9
+- src/app/core/tavern/world-info/bulk-operations.tsx
+- src/app/core/tavern/world-info/entry-editor.tsx
+- src/app/core/tavern/world-info/page.tsx
+- src/app/core/tavern/world-info/settings-panel.tsx
+- src/lib/tavern/wi-references.ts
+- src/lib/tavern/wi-vectors.ts
+- src/lib/tavern/world-info-io.ts
+- src/lib/tavern/world-info-scanner.ts
+- src/stores/tavern-world-info.ts
+
+# Feature - Quick Reply / QR
+
+Count: 10
+- src/app/core/tavern/components/qr-script-editor.tsx
+- src/app/core/tavern/components/quick-reply-bar.tsx
+- src/lib/tavern/slash-commands-service.ts
+- src/lib/tavern/stscript/commands.ts
+- src/lib/tavern/stscript/executor.ts
+- src/lib/tavern/stscript/index.ts
+- src/lib/tavern/stscript/parser.ts
+- src/lib/tavern/stscript/types.ts
+- src/lib/tavern/stscript/variables.ts
+- src/stores/tavern-quick-reply.ts
+
+# Feature - TTS (语音)
+
+Count: 4
+- src/app/core/tavern/components/tts-panel.tsx
+- src/app/core/tavern/components/voice-config.tsx
+- src/lib/tavern/tts-service.ts
+- src/stores/tavern-tts.ts
+
+# Feature - Expressions/Sprite (表情立绘)
+
+Count: 5
+- src/app/core/tavern/components/expressions-panel.tsx
+- src/app/core/tavern/components/sprite-viewer.tsx
+- src/lib/tavern/expressions-service.ts
+- src/lib/tavern/sprite-animator.ts
+- src/stores/tavern-expressions.ts
+
+# Feature - Vectors/RAG (向量检索)
+
+Count: 6
+- src/app/core/tavern/components/vectors-panel.tsx
+- src/lib/bm25.ts
+- src/lib/tavern/chat-vectors.ts
+- src/lib/tavern/vectors-service.ts
+- src/lib/tavern/wi-vectors.ts
+- src/stores/tavern-vectors.ts
+
+# Feature - Attachments (附件)
+
+Count: 3
+- src/app/core/tavern/components/attachments-panel.tsx
+- src/lib/tavern/attachments-service.ts
+- src/stores/tavern-attachments.ts
+
+# Feature - Backgrounds
+
+Count: 2
+- src/app/core/tavern/components/backgrounds-panel.tsx
+- src/stores/tavern-backgrounds.ts
+
+# Feature - Stats
+
+Count: 2
+- src/app/core/tavern/components/stats-panel.tsx
+- src/stores/tavern-stats.ts
+
+# Feature - Macros/Variables (宏/变量)
+
+Count: 9
+- src/app/core/tavern/components/macros-variables-panel.tsx
+- src/lib/tavern-helper/macros/index.ts
+- src/lib/tavern-helper/macros/manager.ts
+- src/lib/tavern-helper/macros/processor.ts
+- src/lib/tavern-helper/variables/index.ts
+- src/lib/tavern-helper/variables/manager.ts
+- src/lib/tavern-helper/variables/store.ts
+- src/stores/tavern-macros.ts
+- src/stores/tavern-variables.ts
+
+# Feature - Connection Profiles
+
+Count: 2
+- src/app/core/tavern/components/connection-profiles.tsx
+- src/stores/tavern-connection-profiles.ts
